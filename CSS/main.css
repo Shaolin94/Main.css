@@ -51,7 +51,7 @@ body{
     max-width: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: auto;
 }
 
@@ -71,8 +71,36 @@ body{
     align-items: center;
 }
 
-.contact
+.contact {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
 
-.posts {
+.posts{
     grid-area: posts;
-} 
+}
+.post-card {
+    background-color: lightgray;
+    padding: 1em;
+    border: 2px solid cornflowerblue;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+}
+
+.post-card > p {
+    margin: 2vh 0;
+}
+
+.post-links {
+    display: flex;
+    justify-content: space-around;
+}
+.post-links > a{ 
+    color: black;
+    text-decoration: none;
+}
+
+.post-links > a:hover{
+text-decoration: underline;    
+}
