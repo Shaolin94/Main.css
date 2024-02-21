@@ -19,15 +19,82 @@ body{
     border: 2px solid black;
 }
 
-.nav{
-    grid-area: area nav;
+.nav {
+    grid-area: nav;
+    background-color: firebrick;
+    position: sticky;
+    top: 0;
 }
 
-.prof-pic{
+.nav-links {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.nav-links > a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links > a:hover {
+    text-decoration: underline;
+}
+
+.prof-pic {
+    grid-area: prof-pic;
+    justify-self: center;
+    align-self: center;
+    height: 100%;
+}
+
+.img-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#prof-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.prof-info {
     grid-area: prof-info;
 }
 
-.prof-info{
-
+.info-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.posts {
+    grid-area: posts;
+}
+
+.post-card {
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 25px;
+    margin: 2vh 0;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links > a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-links > a:hover {
+    color: red;
+    background-color: dodgerblue;
+    text-decoration: underline;
+}
