@@ -3,98 +3,34 @@ body{
 }
 
 
-.grid-container{
-    min-height:100vh;
+.grid-container {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 10vw 1fr 2fr 10vw;
     grid-template-rows: 10vh 40vh 1fr;
     grid-template-areas: 
     "nav nav nav nav"
-    ". prof-pic prof info ."
+    ". prof-pic prof-info ."
     ". posts posts .";
     row-gap: 3vh;
 }
 
-.area-border{
+.area-border {
     border: 2px solid black;
 }
 
 .nav {
     grid-area: nav;
-    background-color: firebrick;
-    position: sticky;
-    top: 0;
-}
-
-.nav-links {
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center
-}
-
-.nav-links > a {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-links > a:hover {
-    text-decoration: underline;
 }
 
 .prof-pic {
     grid-area: prof-pic;
-    justify-self: center;
-    align-self: center;
-    height: 100%;
-}
-
-.img-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#prof-img {
-    max-height: 100%;
-    max-width: 100%;
 }
 
 .prof-info {
     grid-area: prof-info;
 }
 
-.info-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .posts {
     grid-area: posts;
-}
-
-.post-card {
-    border: 1px solid black;
-    padding: 1em;
-    border-radius: 25px;
-    margin: 2vh 0;
-}
-
-.card-links {
-    display: flex;
-    justify-content: space-around;
-}
-
-.card-links > a {
-    color: black;
-    text-decoration: none;
-}
-
-.card-links > a:hover {
-    color: red;
-    background-color: dodgerblue;
-    text-decoration: underline;
-}
+} 
