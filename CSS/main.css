@@ -1,5 +1,5 @@
 body{
-    background-color: salmon;
+    background-color: white;
 }
 
 
@@ -9,7 +9,7 @@ body{
     grid-template-columns: 10vw 1fr 2fr 10vw;
     grid-template-rows: 10vh 40vh 1fr;
     grid-template-areas: 
-    "nav nav nav nav"
+    "nav . . . nav nav nav nav"
     ". prof-pic prof-info ."
     ". posts posts .";
     row-gap: 3vh;
@@ -27,7 +27,7 @@ body{
     row-gap: 3vh;
 }
 
-@media (min-width: 1000px){
+
     .grid-container {
         min-height: 100vh;
         display: grid;
@@ -39,7 +39,7 @@ body{
         ". posts posts .";
         row-gap: 3vh;
     }
-}
+
 
 .area-border {
     border: 2px solid black;
@@ -47,7 +47,7 @@ body{
 
 .nav {
     grid-area: nav;
-    background-color: cornflowerblue;
+    background-color: black;
     position: sticky;
     top: 0;
 }
@@ -69,9 +69,9 @@ body{
 }
 
 .prof-pic {
+    display: flex;
     grid-area: prof-pic;
-    align-self: center;
-    justify-self: center;
+    align-self: stretch;
 }
 .img-container {
     max-width: 75%;
@@ -83,7 +83,9 @@ body{
 
 #prof-img {
     max-height: auto;
-    max-width: 100%;
+    object-fit: contain;
+    width: 150%;
+    display: flex;
 }
 .prof-info {
     grid-area: prof-info;
@@ -107,11 +109,10 @@ body{
     grid-area: posts;
 }
 .post-card {
-    background-color: lightgray;
+    background-color: white;
     padding: 1em;
-    border: 2px solid cornflowerblue;
-    border-radius: 25px;
-    margin-bottom: 1vh;
+    margin-bottom:  1vh;
+    margin-right: 10px;
 }
 
 .post-card > p {
@@ -130,3 +131,4 @@ body{
 .post-links > a:hover{
 text-decoration: underline;    
 }
+
